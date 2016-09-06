@@ -1,0 +1,19 @@
+--Python: a programming lang. created by Guido Van Rossum- in 1980's netherlands
+	-every program translates assembly code and source code
+	-complier(used in C) trans. all of source code (complied lang.)into machine code bef. it can be run=run 
+faster for certain tasks
+	-interpreter translates source code(interpreted langs.) into machine codeas it is being run 
+	-specific to python: carries some characteristics of complied + intp. lang.
+		*code is complied-not put into machine code that can directly be executed by processor
+		*coplies source code into bytecode-intermediate btwn source code + comp. proccessor
+		*you execute complied code-Python intp. trans. bytecode into machine code as it runs
+		*carries some adv. or complied and intp. lang.s
+
+Your 1st prog:
+	-they(prog.) are just text files
+	-1st file "doc folder"-"first Prog.py-rt. click-edit w/idle
+	-print("[statment here]")
+	-escape characters in python~ backslash character(\) used to "escape characters that otherwise
+have a special meaning"
+	ex.)new line, backslash itself(\\), or usa a backslash to include charactes such as quotes into a line--
+print("\  "\"\  ")- "" when read
