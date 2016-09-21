@@ -25,7 +25,6 @@ total = (subtotal + tax)
 
 print("<<<<<<<<<<<<<<<__Receipt__>>>>>>>>>>>>>>>")
 print("")
-print("")
 printf(item1, price1)
 printf(item2, price2)
 printf(item3, price3)
