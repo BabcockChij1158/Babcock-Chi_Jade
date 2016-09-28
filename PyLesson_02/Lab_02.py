@@ -9,11 +9,13 @@ print("The number" , a, "multiplied by" , b, "is" , area)
 print("Concatenation:")
 
 Name = "Joe Silver"
-Adress = "12344 Plum Avenue,"
-City = " Capital City,"
-Zip = " 10034."
+Adress = "12344 Plum Avenue"
+City = "Capital City, "
+State = "NY"
+Zip = " 10034"
 
-print(Name, "lives in California; his address is" , (Adress + City + Zip))
+print(Name+"\n" + Adress+ "\n" +City+State+Zip)
+
 
 print("Complex Calculation:")
 l = 4
