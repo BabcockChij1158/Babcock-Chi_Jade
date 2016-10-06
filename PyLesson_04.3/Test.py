@@ -1,5 +1,3 @@
-number = ((0.01/24+1)**12*5)
-print(number)
 
 num = 4
 num2 = 5
@@ -10,6 +8,7 @@ def calcSum():
     total = num + num2
 
 def printf():
+    global total, num, num2
     print(num,"plus",num2,"is",total)
 
 calcSum()
