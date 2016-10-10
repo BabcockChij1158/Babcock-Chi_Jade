@@ -9,10 +9,10 @@ item3 = input("Please enter item 3:")
 price3 = float(input("Please enter the price:"))
 item4 = input("Please enter item 4:")
 price4 = float(input("Please enter the price:"))
-global discount;
 
 subtotal = (price1+price2+price3+price4)
 tax = (subtotal*0.08)
+discount = subtotal*0.15
 
 def calcdiscount():
     if subtotal >= 2000:

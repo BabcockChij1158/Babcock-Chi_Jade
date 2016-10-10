@@ -13,7 +13,8 @@ rolldice()
 if num1 > num2:
     print("The winner is you!!")
 
-if not num1 > num2:
+if not num1 >= num2:
     print("The winner is computer!!")
 
-
+if num1 == num2:
+    print("It's a tie!!")
