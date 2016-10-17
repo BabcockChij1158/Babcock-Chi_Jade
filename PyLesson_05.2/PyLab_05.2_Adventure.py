@@ -20,7 +20,7 @@ if LeftOrRight == 1:
                          "\n 1. Give him the chicken"+
                          "\n 2. Kick dirt in his face"))
         if hobo == 1:
-            print("The homeless man is content, but now you have lost your chicken, your friend. Your sadness kills you.")
+            print("The homeless man is content, but now you have lost your chicken, your friend. Your sadness kills you, and you are unable to continue your mission.")
         else:
             print("The hobo is angry and stabs you and your chicken, both you and the chicken die and he eats both of you.")
 
