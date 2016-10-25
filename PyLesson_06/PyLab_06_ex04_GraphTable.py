@@ -1,8 +1,10 @@
-repeat = int(input("Enter how often the number will repeat:"))
+integer = int(input("Enter an integer:"))
 size = int(input("Enter the size of the table:"))
 
-def calc(xVal, yVal): 
-    for i in range(1, size+1):
-        print("{:3}\t{:3}".format(xVal, yVal))
+def calc(x, y): 
+    print("{:2}\t{:3}".format(x, y)
 
-calc(repeat, size)
+for i in range(1, size+1):
+    print(i, i*integer)
+
+calc(integer, size)
