@@ -1,11 +1,11 @@
 number = int(input("Enter in an integer:"))
-
 Sum = 0
 num = number
 
-def sumDigits():
+def sumDigits(num, Sum):
     while num > 0:
-        #Sum = Sum + 1 you need to fix this
+        Sum = Sum +(num %10)
         num = int(num / 10)
+    return Sum
 
-print("The sum of the digits in", number,"is", Sum)
+print("The sum of the digits in", number,"is", sumDigits(num, Sum))
