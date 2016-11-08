@@ -1,13 +1,13 @@
-number = int(input("Please enter an integer:"))
+word1 = input("Please enter a word:")
+word2 = input("Please enter a second word:")
+word3 = input("Please enter a third word:")
 
-def luck(number):
-    if number > 0:
-        if number%10 == 7:
-            return 1 + luck(number/10)
-        else:
-            return 0 + luck(number/10)
+def makeCenter(word):
+    if len(word) >= 20:
+        return word
     else:
-        return 0
+        return makeCenter(" " + word + " ")
 
-print("The number of 7's in your number is" ,luck(number))
-    
+print(makeCenter(word1))
+print(makeCenter(word2))
+print(makeCenter(word3))
