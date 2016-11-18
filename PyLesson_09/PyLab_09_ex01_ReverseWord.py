@@ -18,6 +18,8 @@ j = 0
 def reverse():
     for i in range(len(words) - 1, -1, -1):
         output += words[i]
-        
+        if j < len(words)-1:
+            output += ", "
+        j+=1       
     print(output)
 
