@@ -9,17 +9,15 @@ for i in words:
     if j < len(words)-1:
         output += ", "
     j+=1
-print(words)
-
+print(output)
+print("")
 print("Reversed...")
 
 output = ""
 j = 0
 def reverse():
-    for i in range(len(word),0, -1):
-      output += (i)
-    if j < len(words)-1:
-        output += ", "
-    j+=1
+    for i in range(len(words) - 1, -1, -1):
+        output += words[i]
+        
+    print(output)
 
-print(words)
