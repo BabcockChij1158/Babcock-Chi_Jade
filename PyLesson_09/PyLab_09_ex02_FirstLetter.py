@@ -1,6 +1,10 @@
-words = ["cool", "apple", "blog", "shrek", "cat"]
+words = input("Enter a list of 5 words:")
+output = ""
 
 def first(words):
-    words = total
-    for i in total:
-        print(i[0:1])
+    for i in words:
+        print(i[0])
+
+first(words)
+
+

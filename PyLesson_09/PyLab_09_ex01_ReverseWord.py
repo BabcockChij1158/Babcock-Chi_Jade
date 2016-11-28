@@ -1,5 +1,11 @@
 words = ["apple", "banana", "kiwi", "pear", "grape"]
 
+def reverse():
+    output = ""
+    for i in range(len(words)-1, -1, -1):
+        output += words[i] + "\n"
+    print(output)
+
 print("In order...")
 
 output = ""
@@ -13,13 +19,6 @@ print(output)
 print("")
 print("Reversed...")
 
-output = ""
-j = 0
-def reverse():
-    for i in range(len(words) - 1, -1, -1):
-        output += words[i]
-        if j < len(words)-1:
-            output += ", "
-        j+=1       
-    print(output)
+reverse()
+#EDIT, user input
 
