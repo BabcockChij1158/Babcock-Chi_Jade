@@ -3,7 +3,7 @@ words = ["apple", "banana", "kiwi", "pear", "grape"]
 def reverse():
     output = ""
     for i in range(len(words)-1, -1, -1):
-        output += words[i] + "\n"
+        output += words[i] + " "
     print(output)
 
 print("In order...")
