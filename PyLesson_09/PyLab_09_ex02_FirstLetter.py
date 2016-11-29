@@ -1,10 +1,11 @@
-words = input("Enter a list of 5 words:")
-output = ""
+user = input("Enter a list of 5 words separated by a space:")
+words = user.split(" ")
 
 def first(words):
-    for i in words:
-        print(i[0])
+    output = ""
+    for word in words:
+        output += word[0] + " "
+    print(output)
+
 
 first(words)
-
-
