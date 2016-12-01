@@ -1,24 +1,32 @@
-words = ["apple", "banana", "kiwi", "pear", "grape"]
-
-def reverse():
-    output = ""
-    for i in range(len(words)-1, -1, -1):
-        output += words[i] + " "
-    print(output)
+user = input("Enter a list of 5 words separated by a space:")
+words = user.split(" ")
 
 print("In order...")
 
-output = ""
-j = 0
-for i in words:
-    output += (i)
-    if j < len(words)-1:
-        output += ", "
-    j+=1
-print(output)
+for i in range(0, len(words), 1):
+    print(words[i])
+
 print("")
 print("Reversed...")
 
-reverse()
-#EDIT, user input
+for i in range(len(words)-1, -1, -1):
+    print(words[i])
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
