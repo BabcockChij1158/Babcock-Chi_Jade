@@ -11,15 +11,16 @@ for i in numbers:
     output += str(i) + " "  
 print(output)
 
+def average(numbers):
+    average = 0
+    for number in numbers:
+        average += number
+    return average / len(numbers)
+
 print("")
 
 print("The average of the above numbers is...", average(numbers))
 
-def average(numbers):
-    average = 0
-    for i in (0, len(numbers)):
-        average +=# finish tomorow
 
-return Sum / len(numbers)
 
 
