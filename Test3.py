@@ -12,3 +12,7 @@ def printf():
 calcSum()
 printf()
 
+too = [3]
+print(len(too))
+
+

@@ -1,5 +1,5 @@
 user = input("Enter in a mathematical expression such as 2 * 5...")
-equation = user.split()
+equation = user.split(" ")
 
 i = 0
 while i < len(equation):
