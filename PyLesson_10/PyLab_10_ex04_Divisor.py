@@ -1,5 +1,5 @@
-import random
 numsList = []
+import random
 
 for i in range(0, 4):
     numsList.append([])
@@ -11,4 +11,13 @@ for nums in numsList:
     for num in nums:
         output += str(num) + " "
     print(output)
-        
+
+div = input("Please enter a number: ")
+count = 0
+
+for nums in numsList:
+    for num in nums:
+        if num % div == 0:
+            count += 1
+
+print("There are [count] numbers divisible by [div] in the List.")
