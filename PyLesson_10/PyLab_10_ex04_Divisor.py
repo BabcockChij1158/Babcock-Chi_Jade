@@ -12,7 +12,7 @@ for nums in numsList:
         output += str(num) + " "
     print(output)
 
-div = input("Please enter a number: ")
+div = int(input("Please enter a number: "))
 count = 0
 
 for nums in numsList:
@@ -20,4 +20,4 @@ for nums in numsList:
         if num % div == 0:
             count += 1
 
-print("There are [count] numbers divisible by [div] in the List.")
+print("There are", count,"numbers divisible by", div, "in the List.")
