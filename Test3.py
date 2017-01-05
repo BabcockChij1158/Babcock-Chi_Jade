@@ -15,4 +15,12 @@ printf()
 too = [3]
 print(len(too))
 
+print("\n\n\n\n\n")
+
+if(n == 1):
+    return str(1) + " "
+else:
+    return str(sum(n - 1)) + str(n) + " "
+
+
 
