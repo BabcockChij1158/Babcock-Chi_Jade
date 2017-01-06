@@ -4,7 +4,7 @@ import random
 for i in range(0, 4):
     xAndo.append([])
     for j in range(0, 4):
-        switch = random.randint(1, 101)
+        switch = random.randint(0, 2)
         if switch == 1:
             xAndo[i].append("X")
         else:
