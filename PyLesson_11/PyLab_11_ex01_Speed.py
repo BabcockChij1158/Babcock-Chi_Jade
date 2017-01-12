@@ -4,14 +4,14 @@ class MilesPerHour:
         self.distance = d
         self.hours = h
         self.minutes = m
-        mph = 0
+        self.mph = 0
 
     #Modifier
-    def SetValues(self, Distance, Hour, Minutes):
-        self.distance = Distance
-        self.hours = Hours 
-        self.minutes = Minutes
-        mph = 0
+    def SetValues(self, d, h, m):
+        self.distance = d
+        self.hours = h
+        self.minutes = m
+        self.mph = 0
 
     #Acccesor
     def getDist(self):
@@ -24,7 +24,7 @@ class MilesPerHour:
         return self.minutes
 
     def getMPH(self):
-        mph = distance/ (hours + (minutes / 60.0))
+        self.mph = self.distance/ (self.hours + (self.minutes / 60.0))
         return mph
     
 def main():
@@ -32,26 +32,15 @@ def main():
     hours = input("Enter the hours:")
     minutes = input("Enter the number of minutes:")
 
-    calculation = MilesPerHour(distance, hours, minutes, mph)
+    calc1 = MilesPerHour(distance, hours, minutes)
 
-    print("If you travel", user1.getDist(), "miles in", user1.getHours(),"and", user1.getMins(), "minutes, your speed will be ", user1.getMPH(),"mph.")
+    print("If you travel", calc1.getDist(), "miles in", calc1.getHours(),"and", calc1.getMins(), "minutes, your speed will be ", calc1.getMPH(),"mph.")
 
-    
-    
-    print("If you travel", user1.getDist(), "miles in", user1.getHours(),"and", user1.getMins(), "minutes, your speed will be ", user1.getMPH(),"mph.")
+    calc1.getDist(distance)
+    calc1.getHours(hours)
+    calc1.getMinutes(minutes)
 
+    print("If you travel", calc1.getDist(), "miles in", calc1.getHours(),"and", calc1.getMins(), "minutes, your speed will be ", calc1.getMPH(),"mph.")
 
-
-
-
-
-
-
-
-    #user1.getDist(distance)
-    #user1.getHours(hours)
-    #user1.getMinutes(minutes)
-
-    #print("__________Miles Per Hour__________")
-    #print("If you travel", user1.SetDistance(), "miles in", user1.SetHours(),"and", user1.SetMinutes(), "minutes, your speed will be ", user1.SetMPH(),"mph.")
+main()
 
