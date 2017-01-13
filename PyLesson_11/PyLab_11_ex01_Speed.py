@@ -1,6 +1,6 @@
 class MilesPerHour:
     #Constructor
-    def ___init___(self, d, h, m):
+    def __init__(self, d=0, h=0, m=0):
         self.distance = d
         self.hours = h
         self.minutes = m
@@ -25,21 +25,19 @@ class MilesPerHour:
 
     def getMPH(self):
         self.mph = self.distance/ (self.hours + (self.minutes / 60.0))
-        return mph
+        return self.mph
     
 def main():
-    distance = input("Enter the distance:")
-    hours = input("Enter the hours:")
-    minutes = input("Enter the number of minutes:")
+    distance = int(input("Enter the distance:"))
+    hours = int(input("Enter the hours:"))
+    minutes = int(input("Enter the number of minutes:"))
 
+    print("Using the constructor...")
     calc1 = MilesPerHour(distance, hours, minutes)
-
     print("If you travel", calc1.getDist(), "miles in", calc1.getHours(),"and", calc1.getMins(), "minutes, your speed will be ", calc1.getMPH(),"mph.")
 
-    calc1.getDist(distance)
-    calc1.getHours(hours)
-    calc1.getMinutes(minutes)
-
+    print("\nUsing the Modifier/Setter...")
+    calc1.SetValues(500, 5, 50)
     print("If you travel", calc1.getDist(), "miles in", calc1.getHours(),"and", calc1.getMins(), "minutes, your speed will be ", calc1.getMPH(),"mph.")
 
 main()

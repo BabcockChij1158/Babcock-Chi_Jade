@@ -5,70 +5,41 @@ class Distance:
         self.yOne = y1
         self.xTwo = x2
         self.yTwo = y2
-        distance = 0
+        self.distance = 0
 
-    def Resetx1(self, xone):
-        self.xOne = xone
+    def selfValues(self, x1, y1, x2, y2):
+        self.xOne = x1
+        self.yOne = y1
+        self.xTwo = x2
+        self.yTwo = y2
+        self.distance = 0
 
-    def Resety1(self, yone):
-        self.yOne = yone
+    def getDist(self):
+        self.distance = math.sqrt((self.xTwo-self.xOne)*(self.xTwo-self.xOne)+(self.yTwo-self.yOne)*(self.yTwo-self.yOne))
+        return self.distance
 
-    def Resetx2(self, xtwo):
-        self.xTwo = xtwo
+    def Resetx1(self):
+        return self.xOne 
 
-    def Resety2(self, ytwo)
-        self.yTwo = ytwo
+    def Resety1(self):
+        return self.yOne 
 
-    def getDist()
-        distance = Math.sqrt((xTwo-xOne)*(xTwo-xOne)+(yTwo-yOne)*(yTwo-yOne))
-       #what? return
+    def Resetx2(self):
+        return self.xTwo
 
+    def Resety2(self):
+        return self.yTwo
+        
 def main():
-    x1 = input("Enter the first x-coordinate:")
-    y1 = input("Enter the first y-coordinate:")
-    x2 = input("Enter the second x-coordinate:")
-    y2 = input("Enter the second y-coordinate:")
+    xOne = int(input("Enter the first x-coordinate:"))
+    yOne = int(input("Enter the first y-coordinate:"))
+    xTwo = int(input("Enter the second x-coordinate:"))
+    yTwo = int(input("Enter the second y-coordinate:"))
 
-    user1 = Distance(x1, y1, x2, y2)
+    calc1 = Distance(xOne, yOne, xTwo, yTwo)
 
-    print("The distance between (",,",",,") and (",,",",,") is", )
-    
+    print("The distance between (",calc1.Resetx1(),",",calc1.Resety1(),") and (",calc1.Resetx2(),",",calc1.Resety2(),") is", calc1.getDist())
+main()
 
-##import math
-##class Distance:
-##    def __init__(self, x1, y1, x2, y2):
-##        self.xOne = x1
-##        self.yOne = y1
-##        self.xTwo = x2
-##        self.yTwo = y2
-##        distance = 0
-##        #double distance
-##
-##    def Resetx1(self, xone):
-##        self.xOne = xone
-##
-##    def Resety1(self, yone):
-##        self.yOne = yone
-##
-##    def Resetx2(self, xtwo):
-##        self.xTwo = xtwo
-##
-##    def Resety2(self, ytwo)
-##        self.yTwo = ytwo
-##
-##    def getDist()
-##        distance = Math.sqrt((xTwo-xOne)*(xTwo-xOne)+(yTwo-yOne)*(yTwo-yOne))
-##       #what? return
-##
-##def main():
-##    x1 = input("Enter the first x-coordinate:")
-##    y1 = input("Enter the first y-coordinate:")
-##    x2 = input("Enter the second x-coordinate:")
-##    y2 = input("Enter the second y-coordinate:")
-##
-##    user1 = Distance(x1, y1, x2, y2)
-##
-##    print("The distance between (",,",",,") and (",,",",,") is", )
-##    
 
         
