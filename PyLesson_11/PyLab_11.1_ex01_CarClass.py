@@ -15,16 +15,16 @@ class Car:
 
     #Accessors
     def getPaint(self):
-        return.paint
+        return self.paint
 
     def getInterior(self):
-        return.interior
+        return self.interior
 
     def getEngine(self):
-        return.engine
+        return self.engine
 
     def getTires(self):
-        return.tires
+        return self.tires
 
 def main():
     paint = input("Enter the paint color:")
@@ -34,7 +34,10 @@ def main():
 
     print("Your vehicle is ready...")
     car1 = Car(paint, interior, engine, tires)
-    print("Paint:""blue")
+    print("Paint:      ",         car1.getPaint())
+    print("Interior:   ",      car1.getInterior())
+    print("Engine:     ",        car1.getEngine())
+    print("Tires:      ",         car1.getTires())
 
 
 main()
