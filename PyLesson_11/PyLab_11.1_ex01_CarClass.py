@@ -27,12 +27,12 @@ class Car:
         return self.tires
 
 def main():
-    paint = input("Enter the paint color:")
-    interior = input("Enter the interior material:")
-    engine = input("Enter the type of engine:")
-    tires = input("Enter the type of tires:")
+    paint = input("Enter the paint color: ")
+    interior = input("Enter the interior material: ")
+    engine = input("Enter the type of engine: ")
+    tires = input("Enter the type of tires: ")
 
-    print("Your vehicle is ready...")
+    print("\nYour vehicle is ready...")
     car1 = Car(paint, interior, engine, tires)
     print("Paint:      ",         car1.getPaint())
     print("Interior:   ",      car1.getInterior())
