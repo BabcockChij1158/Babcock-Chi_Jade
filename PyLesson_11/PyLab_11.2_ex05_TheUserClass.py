@@ -26,11 +26,11 @@ class User:
 
 def main():
 
-    first = input("Enter your first name: ")
-    last = input("Enter your last name: ")
+    firstName = input("Enter your first name: ")
+    lastName = input("Enter your last name: ")
     Question = input("Would you like to use a public avatar? y or n? ")
 
-    user1 = User(firstName, lastName, avatar)
+    #user1 = User(firstName, lastName)
 
     if Question == "n":
         user1 = User(firstName, lastName)
@@ -38,6 +38,9 @@ def main():
         blah = input("Enter your desired avatar name: ")
         return blah
         user1 = User(firstName, lastName, avatar)
+
+    #user1 = User(firstName, lastName, avatar)
+    
 
     def __str__(self):
         return "User Info...\nFirst Name: " + self.firstName + \
