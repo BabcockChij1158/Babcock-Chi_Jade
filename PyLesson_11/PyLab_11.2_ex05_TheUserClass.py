@@ -1,14 +1,14 @@
 import random
 class User:
     def __init__(self, fName, lName, avat = ""):
-        self.firstName = fname
-        self.lastName = lname
+        self.firstName = fName
+        self.lastName = lName
         self.avatar = avat
         self.userID = random.randint(0, 1000000)
     
     def Modifier(self, fName, lName, avat = ""):
-        self.firstName = fname
-        self.lastName = lname
+        self.firstName = fName
+        self.lastName = lName
         self.avatar = avat
         self.userID = random.randint(0, 1000000)
 
@@ -24,28 +24,24 @@ class User:
     def getUserID(self):
         return self.userID
 
+    def __str__(self):
+        return "User Info...\nFirst Name: " + self.firstName + \
+                           "\nLast Name: " + self.lastName + \
+                           "\nAvatar: " + self.avatar + \
+                           "\nUser ID#: " + str(self.userID)
+
 def main():
 
     firstName = input("Enter your first name: ")
     lastName = input("Enter your last name: ")
     Question = input("Would you like to use a public avatar? y or n? ")
 
-    #user1 = User(firstName, lastName)
-
     if Question == "n":
         user1 = User(firstName, lastName)
-    if Question == "y":
-        blah = input("Enter your desired avatar name: ")
-        return blah
+    else:
+        avatar = input("Enter your desired avatar name: ")
         user1 = User(firstName, lastName, avatar)
-
-    #user1 = User(firstName, lastName, avatar)
+    print(user1)
     
-
-    def __str__(self):
-        return "User Info...\nFirst Name: " + self.firstName + \
-                           "\nLast Name: " + self.lastName + \
-                           "\nAvatar: " + self.avatar + \
-                           "\nUser ID#: " + str(self.userID)
 
 main()
