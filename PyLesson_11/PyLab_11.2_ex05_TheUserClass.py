@@ -25,10 +25,10 @@ class User:
         return self.userID
 
     def __str__(self):
-        return "User Info...\nFirst Name: " + self.firstName + \
-                           "\nLast Name: " + self.lastName + \
-                           "\nAvatar: " + self.avatar + \
-                           "\nUser ID#: " + str(self.userID)
+        return "\nUser Info...\nFirst Name: \t\t" + self.firstName + \
+                           "\nLast Name: \t\t" + self.lastName + \
+                           "\nAvatar: \t\t" + self.avatar + \
+                           "\nUser ID#: \t\t" + str(self.userID)
 
 def main():
 
