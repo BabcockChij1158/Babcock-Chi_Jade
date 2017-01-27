@@ -28,9 +28,9 @@ class MilesPerHour:
         return self.mph
     
 def main():
-    distance = int(input("Enter the distance:"))
-    hours = int(input("Enter the hours:"))
-    minutes = int(input("Enter the number of minutes:"))
+    distance = int(input("Enter the distance: "))
+    hours = int(input("Enter the hours: "))
+    minutes = int(input("Enter the number of minutes: "))
 
     print("Using the constructor...")
     calc1 = MilesPerHour(distance, hours, minutes)
