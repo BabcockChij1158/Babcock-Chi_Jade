@@ -7,7 +7,13 @@
 		body {background-color:orange;
 			font-family:arial;
 			color:purple;}
-		table 
+		table#T01 {color:blue;
+			background-color:red;}
+			border: 5px dashed black;}
+		tr#TR1 {background-color:yellow;} 
+		tr#TR2 {background-color:yellow;}
+		td {border: 2px solid green}
+		
 	
 	</style>
 </head>
@@ -83,18 +89,17 @@
 		which fits along with my interests.</td>
 	</tr>
 	</table>
-	<table style = "background-color:PMS375C;
-					border: 3px, solid PMS289C;"
-					>
-		<th>Table Header</th>
-			<tr>
+	<table id = "T01">
+			
+			<th colspan = "4" >Table Header</th>
+			<tr id="TR1">
 			<td>Table Data</td>
 			<td>Table Data</td>
 			<td>Table Data</td>
 			<td>Table Data</td>
 			</tr>
 			
-			<tr>
+			<tr id="TR2">
 			<td>Table Data</td>
 			<td>Table Data</td>
 			<td>Table Data</td>
