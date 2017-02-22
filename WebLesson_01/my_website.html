@@ -3,8 +3,14 @@
 	<title>My Website</title>
 	<style type = "text/css">
 		h4 {text-indent:35px;}
-		h3 {text-indent:35px;}
-		h5 {text-indent:35px;}
+		h3 {text-indent:35px;
+			font-weight:bold;
+			text-decoration:underline;
+			color: purple;} 
+		h5 {text-indent:35px;
+			font-weight:bold;
+			text-decoration:underline;
+			color: purple;} 
 		h6 {text-indent:35px;}
 		h2 {text-align:center;}
 		
@@ -12,14 +18,18 @@
 			font-family:arial;}
 		p {color:green;}
 		ul {color:purple;
-			<!list-style-image: url("http://speed.ext.net/identity/showcase/extnet-logomark-black.png");>
-			border: 3px solid orange;
+			list-style-image: url("http://findicons.com/files/icons/2222/gloss_basic/32/bullet_yellow.png");
+			border: 3px dashed red;
 			background-color:yellow;}
 			
+		span {color: red;}
+		div {text-align:center;
+			color: purple;
+			background-color:yellow;}
 	</style>
 </head>
 <body>
-	
+	<div><h1>My Website</h1></div>
 	<img src = "ball.jpg" height = "200"><br/>
 	
 	<p><a href = "#What is XHTML & CSS?">What is XHTML & CSS?</a><br>
@@ -46,7 +56,7 @@
 		<em>Italicize:</em> < em > < / em >  -->  Italicizes the enclosed text. </br></br>
 		Header: < h1 > ... < h6 > --> Creates the enclosed text into a header. The size/ 
 		importance of the header is determined by the number after the h. A header with h1
-		has the most priority and will look the biggest while a header with h6 will be of 
+		has the <span>most </span>priority and will look the biggest while a header with h6 will be of 
 		least priority and will appear the smallest. Headers range from h1 to h6.</br></br>
 		Hyperlinks: < a href "..." > < / a >  -->  Paste a link in between the " " and the 
 		title of your hyperlink will be the enclosed text.</br> </br>
@@ -58,7 +68,7 @@
 	<h4><a name = "Scope, Head, Body"></a>Scope, Head, Body</h4>
 		<p>
 		The head of a site includes information for the browser. The information in the head 
-		is seen by the user of the site. It includes keywords for search engines, the title 
+		is seen by the user of the site. It includes <span>keywords</span> for search engines, the title 
 		of the website, browser information etc. You can create a header for your website using 
 		the tag, "title". It is used the same as any other tag where the text is inserted in 
 		between the opening and closing tags. The header should only appear in between the < head > 
@@ -70,7 +80,7 @@
 	<h5><a name = "Tool tips"></a>Important function</h5>
 		<p>
 		Tool tips allows the user to hover over elements of a page for further explanation 
-		of what they do. If a link is not very descriptive, such as if it says "Google is awesome!" 
+		of what they do. If a link is not very <span>descriptive</span>, such as if it says "Google is awesome!" 
 		the user can hold their curser over the text/link, which will tell them "Google home page" so 
 		that they know where the link is taking them. To do this just put title or another variable = 
 		"The name you want to give tag in quotes."</br>
