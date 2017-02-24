@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo');
-h1(color: red;)
-p(font-family: 'Baloo', cursive;)
-a(color: purple;)
+div > h1 {color: red;
+	font-style:italic;}
+h1:first-letter{
+	font-weight:bold;
+	font-size:50px;
+	color:yellow;}
+	p {font-family: 'Baloo', cursive;}
+		a{color: purple;}
+p:nth-child(4)
+	{color:green;}
+h1:after{
+	content: url(smiley.gif);
+
+
