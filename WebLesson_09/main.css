@@ -1,0 +1,16 @@
+* {color:#9999FF;}
+p:not(.happy){color:blue;}
+
+tr:nth-child(odd) > td:nth-child(even){
+background-color:red;\
+color:blue;}
+tr:nth-child(odd) > td:nth-child(odd){
+background-color:blue;
+color:red;}
+tr:nth-child(even) > td:nth-child(odd){
+background-color:red;
+color:blue;}
+tr:nth-child(even) > td:nth-child(even){
+background-color:blue;
+color:red;}
+
