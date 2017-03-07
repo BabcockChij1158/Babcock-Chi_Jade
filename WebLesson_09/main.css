@@ -2,7 +2,7 @@
 p:not(.happy){color:blue;}
 
 tr:nth-child(odd) > td:nth-child(even){
-background-color:red;\
+background-color:red;
 color:blue;}
 tr:nth-child(odd) > td:nth-child(odd){
 background-color:blue;
