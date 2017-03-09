@@ -18,6 +18,62 @@ body{
 }
 
 #bigWrapper {
-	border: 1px solid purple;
-	width: 100px;
+	border: 1px solid #990033;
+	width: 1000px;
+	margin: 20px auto;
+	text-align:left;
+	}
+#topHeader{
+	background: #CC6699;
+	border: 1px solid #330099;
+	padding: 20px;
 }
+#topMenu {
+	background: #6666FF;
+	color: white;
+}
+#topMenu li  {
+	display: inline-block;
+	list-style: none;
+	padding: 5px;
+	font: bold 14px Tahoma;
+}
+#mainSection{
+	float:left;
+	width: 660px;
+	margin: 30px; /* 720 total px, 220 left, puts 30 px around whole div section*/
+}
+#sideNews{
+	float: left;
+	width: 220px;
+	margin: 20px 0px;/*at top only*/
+	padding: 30px;
+	background: #00FF99;
+	}
+#pageFooter{
+	clear: both;
+	text-align:center;
+	padding:20px;
+	border-top: 2px solid red;
+	font-style: arial;
+}
+
+article {
+	background: #CCFFCC;
+	border: 1px solid #000099;
+	padding: 20px;
+	margin-bottom: 15px;
+}
+
+article > footer {
+	text-align:right;
+}
+
+
+
+
+
+
+
+
+
