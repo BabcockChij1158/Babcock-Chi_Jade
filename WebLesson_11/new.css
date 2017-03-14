@@ -1,0 +1,13 @@
+#parent { 
+	border: 2px solid blue;
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	width: 700px;
+	height: 300px;
+}
+#kid1 {
+	border: 2px solid red;
+	background: green;
+	padding: 20px;
+	margin: 10px;
+}
