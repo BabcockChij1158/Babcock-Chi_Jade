@@ -48,21 +48,23 @@ body {
 }
 #mainSection{
 	border: 1px solid blue;
-	-webkit-box-flex: 1;
 	margin: 20px;
 	padding: 20px;
+	-webkit-box-ordinal-group: 2;
+	-webkit-box-flex: 15;
 }
 #sideNews{
-	border: 1px solid red;
-	width: 220px;
+	border: 1px solid #666600;
 	margin: 20px 0px;
 	padding: 30px;
-	background: purple;
+	background: #CCCC99;
+	-webkit-box-ordinal-group: 1;
+	-webkit-box-flex: 1;
 }
 #pageFooter{
 	text-align: center;
 	padding: 20px;
-	border-top: 2px solid green;
+	border-top: 2px solid black;
 }
 
 
