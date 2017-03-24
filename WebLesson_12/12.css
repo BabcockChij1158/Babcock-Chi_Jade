@@ -8,14 +8,18 @@ body {
 	margin: 50px auto;
 	padding: 15px;
 	text-align: center;
-	border: 1px solid blue;
-	background: -webkit-radial-gradient(center, circle, red 0%, orange 80%);
-	-webkit-border-radius: 15px;
-	-webkit-box-shadow: rgb(110, 110, 110) 10px 8px 8px;
+	border: 5px solid blue;
+	background: yellow;
+	outline: 7px solid red;
+	-webkit-transition:-webkit-transform 0.5s;
 	
 }
 
 #text{
 	font: bold 30px Century Gothic;
-	text-shadow: rgb(40, 40, 40) 1px 1px 1px;
+	text-shadow: rgb(40, 40, 50) 1px 1px 1px;
+}
+
+#box:hover{
+	-webkit-transform: translate(-20px, -20px) rotate(30deg) scale(.8);
 }

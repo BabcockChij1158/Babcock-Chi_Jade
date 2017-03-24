@@ -70,8 +70,13 @@ body {
 #pageFooter{
 	text-align: center;
 	padding: 20px;
-	border-top: 2px solid black;
-}
+border-top: 2px solid black;}
+
+article {
+	background: white;
+	border: 1px solid #000099;
+	padding: 20px;
+	margin-bottom: 15px;}
 
 
 
