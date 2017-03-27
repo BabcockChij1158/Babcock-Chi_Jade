@@ -1,25 +1,118 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+h1{
+	font: bold 20px Tahoma;
+}
+h2{
+	font: bold 14px Tahoma;
+}
+header, section, footer, aside, nav, article, hgroup{
+	display: block;	
+}
 body {
-	text-align: center;
-	
-}
-#box{
-	display: block;
-	width: 500px;
-	margin: 50px auto;
-	padding: 15px;
-	text-align: center;
-	border: 5px solid blue;
-	background: yellow;
-	outline: 7px solid red;
-	-webkit-transition:-webkit-transform 0.5s;
-	
+	width:100%;
+	display:-webkit-box;
+	-webkit-box-pack:center;
+	background-color: #white;
 }
 
-#text{
-	font: bold 30px Century Gothic;
-	text-shadow: rgb(40, 40, 50) 1px 1px 1px;
+#bigWrapper {
+	max-width: 1000px;
+	margin: 20px 0px;
+	display: -webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-box-flex:1;
+	background-color: #white;
+}
+#topHeader{
+	background: -webkit-linear-gradient(right, #999900, white);
+	border: 3px solid black;
+	padding: 20px;
+	
+}
+#topMenu{
+	border: red;
+	background: #666600;
+	color: white;
+}
+#topMenu li {
+	display: inline-block;
+	list-style: none;
+	padding: 5px;
+	font: bold 14px Tahoma;
+	background: #666600;
+	-webkit-border-radius: 3px;
+	-webkit-transition: -webkit-transform 0.5s; 
+}
+#topMenu li:hover{
+	-webkit-transform: scale(1.2,1.2);
+	color:yellow;
+
 }
 
-#box:hover{
-	-webkit-transform: translate(-20px, -20px) rotate(30deg) scale(.8);
+#flexDiv {
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
 }
+#mainSection{
+	border: 1px solid blue;
+	margin: 20px;
+	padding: 50px;
+	-webkit-box-ordinal-group: 2;
+	-webkit-box-flex: 15;
+	background-color: #FFFF99;
+}
+#sideNews{
+	border: 1px solid #666600;
+	margin: 20px 0px;
+	padding: 30px;
+	background: #CCCC99;
+	-webkit-box-ordinal-group: 1;
+	-webkit-box-flex: 1;
+	font: 14px arial;
+
+
+	color: white;}
+	
+#sideNews:hover{
+	font-style: italic;
+	-webkit-transform: skew(-15deg);
+	-webkit-border-radius: 10px;
+	-webkit-transition: -webkit-transform 0.5s;
+	color: red;
+}
+#pageFooter{
+	text-align: center;
+	padding: 20px;
+border-top: 2px solid black;}
+
+article {
+	background: white;
+	border: 1px solid #000099;
+	padding: 20px;
+	margin-bottom: 15px;
+	-webkit-border-radius: 8px;
+	-webkit-box-shadow: rgb(120, 120, 120) 10px 8px 10px;
+}
+
+article:hover{
+	-webkit-transform: scale(1.02)
+	background: -webkit-radial-gradient(center, circle, white 0%, green 70%); /*edit*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
