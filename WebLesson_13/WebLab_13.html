@@ -1,0 +1,29 @@
+<html>
+<head>
+</head>
+<body>
+<form>
+	Height: <input type = "text" size = 15 maxlength = 15 id  = "height" value = "Height (inches)"/>
+	<br/>
+	<br/>
+	Weight: <input type = "text" size = 15 maxlength = 15 id  = "weight" value = "Weight (pounds) "/>
+	<br/>
+	<br/>
+	<input type = "button" value = "Calculate" onclick = "calcPerim()"/>
+</form>
+
+<script type = "text/javascript">
+	function calcPerim() {
+		var h = document.getElementById("height").value;
+		var w = document.getElementById("width").value;
+		document.write("Your perimeter is... " + ((h * 0.0254)*(h * 0.0254)+(w * 0.453592)));
+	}
+</script>
+
+
+
+
+
+
+</body>
+</html>
