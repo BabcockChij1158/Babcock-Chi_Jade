@@ -9,14 +9,14 @@
 	Weight: <input type = "text" size = 15 maxlength = 15 id  = "weight" value = "Weight (pounds) "/>
 	<br/>
 	<br/>
-	<input type = "button" value = "Calculate" onclick = "calcPerim()"/>
+	<input type = "button" value = "Calculate" onclick = "calcBMI()"/>
 </form>
 
 <script type = "text/javascript">
-	function calcPerim() {
+	function calcBMI() {
 		var h = document.getElementById("height").value;
-		var w = document.getElementById("width").value;
-		document.write("Your perimeter is... " + ((h * 0.0254)*(h * 0.0254)+(w * 0.453592)));
+		var w = document.getElementById("weight").value;
+		document.write("Your BMI is... " + ((w * 0.453592)/(h * 0.0254*h * 0.0254)));
 	}
 </script>
 
