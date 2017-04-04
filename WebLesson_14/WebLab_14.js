@@ -11,12 +11,16 @@ function validate(){
 	//there is no .com, .gov, or any other extension
 	//final dot in the wrong place
 	
-	if(atPos < 1 || dotPos<atPos+2 || dotPos + 2 > x.length)
-		alert("This is not a valid email address!")
-	if(y.length < 6)
-		alert("Password must be at least 6 characters...")
-	if(atPos < 1 && dotPos < atPos+2 && dotPos + 2 > x.length && y.length < 6)
-		alert("Both username and password are invalid!")
+	if((atPos < 1 || dotPos < atPos+2 || dotPos + 2 > x.length) && y.length < 6)
+		alert("Both username and password are invalid!");
 	else
-		alert("Success!")
+	{
+		if(atPos < 1 || dotPos<atPos+2 || dotPos + 2 > x.length)
+			alert("This is not a valid email address!")
+		else if(y.length < 6)
+			alert("Password must be at least 6 characters...")
+		
+		else
+			alert("Success!")
 	}
+}
