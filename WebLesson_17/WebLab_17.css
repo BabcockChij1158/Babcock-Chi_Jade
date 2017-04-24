@@ -1,0 +1,22 @@
+#leftBox {
+	float: left;
+	width: 300px;
+	height: 300px;
+	margin: 5px;
+	border: 3px solid #007F7F;/* i like this one #67B5A3 */
+
+}
+ 
+#rightBox {
+	float: left;
+	width: 300px;
+	height: 300px;
+	margin: 5px;
+	border: 3px solid #A86550;
+	background-color: #DCC6BF
+}
+ 
+#taco {
+	max-height: 100px;
+	
+}

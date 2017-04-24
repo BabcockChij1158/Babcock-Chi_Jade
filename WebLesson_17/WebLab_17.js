@@ -23,14 +23,14 @@ function startDrag(e) {
 
 function dragEnter(e){
 	e.preventDefault();
-	leftbox.style.background = "#7F7FFF";
-	leftbox.style.border = "3px solid green";
+	leftbox.style.background = "#8BDBDB";//#i like this one : #7F7FFF
+	leftbox.style.border = "3px solid #007F7F";
 }
 
 function dragLeave(e){
 	e.preventDefault();
 	leftbox.style.background = "white";
-	leftbox.style.border = "3px solid purple";
+	leftbox.style.border = "3px solid #67B5A3";
 }
 
 function drop(e) {
@@ -44,3 +44,22 @@ function endDrag(e){
 	
 }
 window.addEventListener("load", drag, false); //as window loads, will run drag, and another set of event listeners
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
