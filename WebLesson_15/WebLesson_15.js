@@ -3,11 +3,7 @@ function shapes()
 	var x = document.getElementById("canvas"); //canvas is a container
 	//get allows us to use things that will enable to draw on the canvas
 	canvas = x.getContext("2d");
-	//var g = canvas.createLinearGradient();
-	//g.addColorStop(0, "purple");
-	//g.addColorStop(0.5, "white");
-	//g.addColorStop(1, "yellow");
-	//canvas.fillStyle = "g";
+	
 	
 	canvas.beginPath();
 	canvas.moveTo(50, 200);
@@ -27,8 +23,14 @@ function shapes()
 	canvas.lineTo(70, 90);
 	canvas.lineTo(165, 175);
 	canvas.closePath();
-	canvas.fill();
+	canvas.stroke();
 	
+	var g = canvas.createLinearGradient(200, 200, 250, 250);
+	g.addColorStop(0, "purple");
+	g.addColorStop(0.5, "white");
+	g.addColorStop(1, "yellow");
+	canvas.fillStyle = g;
+	canvas.fill();
 }
 
 window.addEventListener("load", shapes, false);
